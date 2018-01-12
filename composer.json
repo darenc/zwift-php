@@ -1,0 +1,21 @@
+{
+    "name": "darenc/php-zwift-mobile-api",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "protobuf-php/protobuf": "^0.1.3",
+        "google/protobuf": "v3.5.1.1"
+    },
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Daren Chandisingh",
+        "email": "dchandisingh@gmail.com"
+      }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
