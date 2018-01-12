@@ -2,8 +2,6 @@
 
 namespace ZwiftPHP;
 
-use GuzzleHttp\Client;
-
 /*
 Reference: result of successful auth codes request
 

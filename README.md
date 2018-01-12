@@ -21,11 +21,26 @@ Use composer to install this ZwiftPHP package.
 ```
 
 ### ZwiftPHP usage
-#### First, authorisation and authentication
+
+You autenticate against Zwift with your own email address and password. Then you can download public
+data from other profiles as long as you have the profile ID. 
+
 ```php
 <?php
-include 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
+try {
+    $zml = new ZwiftPHP\ZwiftAccount('your@zwift.email.address', 'YourZwiftPassword');
+
+    $profile = $zml->getProfile('me');
+
+    $profileData = $profile->profile();
+
+    echo $profileData['firstName']; // 'Daren'
+
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
 ```
 
 #### Call an API method

@@ -1,9 +1,11 @@
 {
-    "name": "darenc/php-zwift-mobile-api",
+    "name": "darenc/zwift-php",
+    "description": "A wrapper around the Zwift mobile API",
     "require": {
+        "php": ">=5.4",
         "guzzlehttp/guzzle": "^6.3",
         "protobuf-php/protobuf": "^0.1.3",
-        "google/protobuf": "v3.5.1.1"
+        "google/protobuf": "^3.5.1.1"
     },
     "license": "MIT",
     "authors": [
