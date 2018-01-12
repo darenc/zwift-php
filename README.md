@@ -10,6 +10,9 @@ In particular this is a PHP port of the [zwift-mobile-api Javascript library](ht
 ## Getting started
 
 ### Composer package
+
+:warning: *This won't work yet - the package is work in progress so isn't on Packagist yet!* :warning:
+
 Use Composer to install this ZwiftPHP package.
 
 Either add this to your `composer.json`:
