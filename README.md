@@ -15,7 +15,7 @@ Use composer to install this ZwiftPHP package.
 ```
 {
     "require": {
-        "darenc/ZwiftPHP": "0.1.0"
+        "darenc/zwift-php": "0.1.0"
     }
 }
 ```
