@@ -10,7 +10,9 @@ In particular this is a PHP port of the [zwift-mobile-api Javascript library](ht
 ## Getting started
 
 ### Composer package
-Use composer to install this ZwiftPHP package.
+Use Composer to install this ZwiftPHP package.
+
+Either add this to your `composer.json`:
 
 ```
 {
@@ -18,6 +20,12 @@ Use composer to install this ZwiftPHP package.
         "darenc/zwift-php": "0.1.0"
     }
 }
+```
+
+Or use Composer on the command line:
+
+```
+composer require darenc/zwift-php
 ```
 
 ### ZwiftPHP usage
