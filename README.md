@@ -52,9 +52,20 @@ try {
 ```
 
 #### Call an API method
+
 ```php
 <?php
-include 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
+
+$zml = new ZwiftPHP\ZwiftAccount('your@zwift.email.address', 'YourZwiftPassword');
+
+// First get an Activity object for user ID 994.
+$activity = $zml->getActivity('994');
+
+// Get a list of his activities (defaults to the most recent 20)
+$activities = $activity->list();
+
+echo $activities[0]['name']; // 'Zwift - KISS Men's Crit - Europe p/b Tacx'
 
 ```
 

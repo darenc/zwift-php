@@ -2,8 +2,6 @@
 
 namespace ZwiftPHP;
 
-use GuzzleHttp\Client;
-
 class Request
 {
     protected $accessToken = null;

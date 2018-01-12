@@ -13,14 +13,15 @@ class Activity
         $this->request = new Request($accessToken);
     }
 
-    public function list()
+    public function list(int $start = 0, int $limit = 20)
     {
         return json_decode(
-            $this->request->json("/api/profiles/{$this->userId}/activities?start=0&limit=9999"),
+            $this->request->json(
+                "/api/profiles/{$this->userId}/activities?start={$start}&limit={$limit}"
+            ),
             true
         );
     }
-
     public function getActivity($activityId)
     {
         return json_decode(
